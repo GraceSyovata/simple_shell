@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * _strncat - Concantenates two strings where n number
+ * _strncat - Concantenates 2 strings where n number
  *            of bytes are copied from source.
  * @dest: Pointer to destination string.
  * @src: Pointer to source string.

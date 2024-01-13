@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * trim - remove space
+ * trim - remv space
  * @cmd: comand
  * Return: command
  */

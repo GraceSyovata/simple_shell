@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * handle_exit - function that terminate the prog when
+ * handle_exit - fn that terminate the prog when
  * user types "exit".
  * @cmd: the string to be read.
  * Return: nothing.

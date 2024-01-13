@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * intlen - a function that ... later
+ * intlen - a fun that ... later
  * @n: a parameter
  * Return: the len.
  */

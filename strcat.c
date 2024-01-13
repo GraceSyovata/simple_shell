@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * _strcat - This function appends the src string to the dest string
+ * _strcat - This function is for appending the src string to the dest string
  * @dest: string agument
  * @src: string argument
  * Return: String

@@ -9,7 +9,7 @@
 #include <stdbool.h>
 #define MAX_C 10
 /**
- * struct denum - structure that contains vars
+ * struct denum - structure that contain vars
  * @cnt: lines cnt
  */
 typedef struct denum

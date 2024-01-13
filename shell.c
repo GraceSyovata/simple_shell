@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * main - main function
+ * main - main funct
  * @arc: len argument
  * @arv: arv argument by user
  * @envp: envp argument env

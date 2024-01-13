@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * _strncmp - to compare n bytes in str1 and str2
+ * _strncmp - for comparing n bytes in str1 and str2
  * @str1: 1st string for comparison
  * @str2: second string for comparison
  * @n: no of bytes for checking

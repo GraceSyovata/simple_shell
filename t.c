@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * _strcmp - unction that compares two strings
+ * _strcmp - function that compares two strings
  * @s1: first function
  * @s2: second function
  * Return: val

@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * runcmd - a function that run command
+ * runcmd - a funct that run command
  * @rgv: rgv argument
  * @arv: arv argument
  * @envp: envp argument
