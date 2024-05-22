@@ -1,76 +1,78 @@
-.TH man 1 "DEC 08 2021" "1.0" "Holberton Simple Shell Project"
-
+.TH SHELL 1 "27 November 2019" GNU "Shell man page"
 .SH NAME
-    hsh - Holberton Simple Shell: command line interpreter
-
+.B hsh
+- Command line interpreter (shell)
 .SH SYNOPSIS
-hsh [filename]
-
-.SH COPYRIGHT
-    Public Domain, no copyright protection
-
+The shell is executed by typing ./hsh
+.br
+Then, it will wait for an input such as : command [arguments] [other]
 .SH DESCRIPTION
-.B hsh
-is a basic imitation of a command line interpreter that reads and implements basic commands from user input as a shell would.
-.PP
-.B hsh
- is compiled on Ubuntu 14.04 LTS with gcc 4.8.4 (C90). It is built to run in both interactive and noninteractive mode.
-.PP
-.SH USER INPUT
-Once a user inputs a command and hits enter, the shell performs the following actions:
-
-1. Splits the command into an array of words.
-
-2. Looks for the command.
-
-3. Executes the command.
-.PP
-.SH SEARCH FOR COMMAND
-When locating a command, the shell looks for a built-in command by that name.
-If a built-in command is not found, the shell searches for the command in the PATH.
-.PP
-.SH EXECUTE COMMAND
-Commands are executed in a child process of the main process.
-.PP
-.SH BUILTINS
-.IP help
-Call help, display shell help
-.IP exit
-Exits process and frees memory allocated.
-.IP cd
-Change directories
-
-.SH EXAMPLES
-Below an example of interactive mode:
-
-.RS +4
-$ ./hsh
-.RE
-.RS +4
-($) /bin/ls
-.RE
-.RS +4
-hsh main.c shell.c
-.RE
-.RS +4
-($)
-.RE
-.RS +4
-($) exit
-.RE
-.RS +4
-$
-
+This shell is a project dedicated to our studies. My partner and I, have tried to mimic the behavior of a real shell. In case you don't know what a shell is (I doubt that) here is a brief explanation. A shell is a command language interpreter that executes commands read from the standard input or from a file. Our shell does not support the arguments passed to it, yet. We are still working on it.
+.br
+.B What hsh can do :
+.br
+- Executes any command with its arguments
+.br
+- Executes built-in commands
+.br
+- Handle pipes
+.br
+- Handle the command seperator ;
+.br
+- Handle && and || logical operators
+.br
+- handle variable replacement
+.br
+- handle the $? variable
+.br
+- handle the $$ variable
+.SH BUILT-IN FUNCTIONS
+Those are the available built-in functions :
+.br
+ - exit : exit the shell
+.br
+ - cd : Change Directory
+.br
+ - help : Display the help page
+.br
+ - history : Display history of commands used
+.br
+ - alias : Put an alias for a command
+.br
+ - env : Display the environment variables
+.SH OPTIONS
+There are no options for the moment.
+.SH EXIT STATUS
+The exit value depends on how a function has terminated. Every error is identified by a certain value. On success it will always return 0.
+.SH RETURN VALUE
+Return 0 on success, otherwise it will return the exit value.
+.SH ENVIRONMENT
+- PATH
+.br
+- $?
+.br
+- $$
 .SH BUGS
-No known bugs until now.
-
+There is no known bugs at the moment.
+.SH EXAMPLE
+.B Two ways to execute our shell :
+.br
+.B The intercative mode :
+.br
+ $ ./hsh
+.br
+ #cisfun$ /bin/ls
+.br
+ hsh main.c shell.c
+.br
+ #cisfun$ exit
+.br
+ $
+.br
+.B The non-interactive mode :
+.br
+ $ echo "/bin/ls" | ./hsh
+.br
+ hsh main.c shell.c
 .SH AUTHORS
-.PP
-Andres Henderson - https://github.com/andresovichh
-.PP
-Oscar Bedat - https://github.com/Ouyei
-
-.PP
-.SH SEE ALSO
-.BR man
-.BR sh
+Mariem Matri, Inès Chokri
